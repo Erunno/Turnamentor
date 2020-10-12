@@ -19,6 +19,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RockPaperScissors.Contestan
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RockPaperScissors.ConsoleTurnament", "RockPaperScissors.ConsoleTurnament\RockPaperScissors.ConsoleTurnament.csproj", "{A2BEE346-6B1E-4C45-B8C6-2A2DC6B563AE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Turnamentor.CLI", "Turnamentor.CLI\Turnamentor.CLI.csproj", "{6163A162-CD3F-47D8-9B41-51D6C1F0BB51}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -49,6 +51,10 @@ Global
 		{A2BEE346-6B1E-4C45-B8C6-2A2DC6B563AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2BEE346-6B1E-4C45-B8C6-2A2DC6B563AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A2BEE346-6B1E-4C45-B8C6-2A2DC6B563AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6163A162-CD3F-47D8-9B41-51D6C1F0BB51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6163A162-CD3F-47D8-9B41-51D6C1F0BB51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6163A162-CD3F-47D8-9B41-51D6C1F0BB51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6163A162-CD3F-47D8-9B41-51D6C1F0BB51}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
