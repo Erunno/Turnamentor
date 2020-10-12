@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RockPaperScissors.Contestants\RockPaperScissors.Contestants.csproj" />
+    <ProjectReference Include="..\RockPaperScissors.Engine\RockPaperScissors.Engine.csproj" />
+    <ProjectReference Include="..\Turnamentor.Core\Turnamentor.Core.csproj" />
+    <ProjectReference Include="..\Turnamentor.Interfaces\Turnamentor.Interfaces.csproj" />
+  </ItemGroup>
+
+</Project>

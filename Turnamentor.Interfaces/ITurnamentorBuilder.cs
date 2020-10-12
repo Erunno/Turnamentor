@@ -5,12 +5,13 @@ using Turnamentor.Interfaces;
 
 namespace Turnamentor.Interfaces
 {
-    public enum ClassSource { Assemblies, SourceFile, Both }
+    public enum ClassSource { Assemblies, SourceFiles, Both }
 
     public interface ITurnamentorBuilder<Contestant, Score, ScoreBoard> where ScoreBoard : IScoreBoard<Score>
     {
         /// <summary>
         /// Builds instance of ITurnamentor based on given configuration.
+        /// Also it resets any given configuration.
         /// </summary>
         /// <exception cref="NoEmptyConstructorFoundException">In case that score board is not set explicitely and given type of score board does not implement empty constructor.</exception>
         ITurnamentor<ScoreBoard, Score> BuildTurnamentor();
@@ -57,10 +58,10 @@ namespace Turnamentor.Interfaces
         /// All assemblies (resp. source files) in given directory (and child directories) are loaded (resp. compiled and loaded)
         /// </summary>
         /// <param name="source">Type of files which will be searched.</param>
-        /// <param name="pathsToDirectories">This directory and child directories are searched.</param>
+        /// <param name="directories">This directory and child directories are searched. If none directory is given than working directory is searched.</param>
         /// <exception cref="NoContestantFoundException">No contestats found in give directories.</exception>
         /// <exception cref="NoEmptyConstructorFoundException">One or more contestant does not implement emty constructor.</exception>
-        ITurnamentorBuilder<Contestant, Score, ScoreBoard> AddContestants(ClassSource source, params string[] pathsToDirectories);
+        ITurnamentorBuilder<Contestant, Score, ScoreBoard> AddContestants(ClassSource source, params string[] directories);
 
         /// <summary>
         /// Number of constestant which will compete in one round.

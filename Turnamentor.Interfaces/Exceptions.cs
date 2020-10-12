@@ -4,7 +4,8 @@ using System.Text;
 
 namespace Turnamentor.Interfaces
 {
-    class NoInstanceOfGameEngineFoundException : Exception { }
-    class NoEmptyConstructorFoundException : Exception { }
-    class NoContestantFoundException : Exception { }
+    public class NoInstanceOfGameEngineFoundException : Exception { }
+    public class NoEmptyConstructorFoundException : Exception { }
+    public class NoContestantFoundException : Exception { }
+    public class AmbiguousGameEngine : Exception { }
 }
